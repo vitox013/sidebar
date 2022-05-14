@@ -1,0 +1,150 @@
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+:root {
+    --body-bg-color: #dce4e3;
+    --green: #18c29c;
+    --light-green: #8ed7c6;
+    --light-grey: #dce4e3;
+    --text-color: #084236;
+    --poppins: 'Poppins', sans-serif;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.hidesidebar {
+    width: 65px !important;
+    transition: width 0.3s ease;
+}
+.hide {
+    display: none !important;
+}
+
+a {
+    text-decoration: none;
+    color: #084236;
+}
+
+#menu {
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+
+span {
+    margin-left: 10px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: var(--poppins);
+    gap: 20px;
+    background-color: var(--body-bg-color);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--green);
+    width: 250px;
+    padding: 0px;
+    transition: width 0.3s ease;
+}
+
+/*===============NAV HEADER ======= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    padding: 20px;
+}
+
+/* ============ UL =============== */
+nav {
+    display: flex;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#form {
+    width: 100%;
+    height: 45px;
+}
+
+
+form:first-child {
+    background-color: var(--light-green);
+    margin-left: -5px;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+form input {
+    outline: none;
+    background-color:transparent;
+    border: 0;
+    font-size: 1rem;
+    
+}
+
+
+
+
+
+/*===============NAV FOOTER===============*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8ed7c6;
+    padding: 10px;
+}
+
+.avatar {
+    width: 2.812rem;
+    height: 2.812rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 0.75rem;
+}
+
+.Vet {
+    display: flex;
+}
+
+.nameVet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 15px;
+}
+
+#profissao {
+    font-size: 0.8rem;
+}
+
+footer img:nth-child(2) {
+    margin-left: 10px;
+}
+/* =========== MAIN============= */
+main {
+    padding: 10px;
+}
