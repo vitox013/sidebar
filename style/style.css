@@ -17,7 +17,6 @@
 }
 .hidesidebar {
     width: 65px !important;
-    transition: width 0.3s ease;
 }
 .hide {
     display: none !important;
@@ -48,8 +47,18 @@ li {
     border-radius: 10px;
 }
 
+@keyframes navLinkFade {
+    from{
+        display: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
 span {
     margin-left: 10px;
+    opacity: 0;
 }
 
 body {
@@ -66,7 +75,7 @@ body {
     background-color: var(--green);
     width: 250px;
     padding: 0px;
-    transition: width 0.3s ease;
+    transition: width 0.5s ease;
 }
 
 /*===============NAV HEADER ======= */
