@@ -125,6 +125,7 @@ footer {
     justify-content: space-between;
     background-color: #8ed7c6;
     padding: 10px;
+    height: 50px;
 }
 
 .avatar {
